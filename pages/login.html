@@ -13,20 +13,27 @@
             <div id="imagem">
 
             </div>
-            <div id="formulario">
+            <div id="formulario" >
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login e acesse sua conta</p>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta</p>
                 <form action="login" method="post" autocomplete="on">
-                    <div class=""> 
+                    <div class="form-control"> 
                         <input class="inputEmail" type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required minlength="15">
                         <label for="ilogin"></label>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Menssagem de erro</small>
                     </div>
-                    <div class="">
-                        
-                        <input class="inputSenha" type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8">
+                    <div class="form-control">
+
+                        <input class="inputSenha" type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" >
                         <label for="isenha"></label>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Menssagem de erro</small>
                     </div>
-                    <input  src="creatAcount.html" type="submit" value="Entrar">
+                    <button onclick="validar()"  id="entrar" >Validar</button>
+                    
                     <a href="creatAcount.html" class="botao">
                         Criar conta
                          
@@ -37,6 +44,7 @@
 
         </section>
     </main>
-
+    <script src="https://kit.fontawesome.com/32ab312f98.js" crossorigin="anonymous"></script>
+    <script src="../javascrip/login.js"></script>
 </body>
 </html>
