@@ -22,8 +22,7 @@ function checkInputs(){
 
     if (passwordValue ===""){
         setErrorFor(password, 'A senha é obrigatória');
-    } else if(passwordValue !=="12345678"){
-        setErrorFor(password, 'senha incorreta');
+
     }else {
         setSuccesFor(password);
     }
@@ -37,8 +36,7 @@ function checkInputs(){
     
       if (formIsValid) {
     
-        entrar.classList.remove("showThewayOff");
-        entrar.classList.add("showThewayOn");
+       
         console.log("O formulário está 100% válido!");
       }
 };
